@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:typed_data';
-import 'package:pointycastle/digests/sha512.dart';
-import 'package:pointycastle/key_derivators/api.dart' show Pbkdf2Parameters;
-import 'package:pointycastle/key_derivators/pbkdf2.dart';
-import 'package:pointycastle/macs/hmac.dart';
+import 'package:pointycastle_hcb/digests/sha512.dart';
+import 'package:pointycastle_hcb/key_derivators/api.dart' show Pbkdf2Parameters;
+import 'package:pointycastle_hcb/key_derivators/pbkdf2.dart';
+import 'package:pointycastle_hcb/macs/hmac.dart';
 
 class PBKDF2 {
   final int blockLength;
