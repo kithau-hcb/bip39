@@ -32,7 +32,7 @@ String _bytesToBinary(Uint8List bytes) {
 String _deriveChecksumBits(Uint8List entropy) {
   final ENT = entropy.length * 8;
   final CS = ENT ~/ 32;
-  final hash = sha256.newInstance().convert(entropy);
+  final hash = sha256.convert(entropy);
   return _bytesToBinary(Uint8List.fromList(hash.bytes)).substring(0, CS);
 }
 
